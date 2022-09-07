@@ -1,0 +1,80 @@
+/* COLORS ROOT  */
+
+:root{
+    --orange: #ff6900;
+    --blach: #1a1a1a;
+    --white: #ffffff;
+}
+
+/* UTILITY */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/* GENERAL RULES */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+}
+
+/* HEADER */
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+header{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.logo{
+    height: 30px;
+}
+
+nav{
+    padding: 20px 0;
+}
+
+header nav ul{
+    min-width: 200px;
+}
+
+.personal-area i{
+    color: var(--white);
+    padding-left: 5px;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: var(--orange);
+    z-index: 1000;
+} */
+
+
