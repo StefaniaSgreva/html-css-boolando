@@ -6,6 +6,8 @@
     --white: #ffffff;
     --shadow: #acacac;
     --red: red;
+    --green: green;
+
 }
 
 /* UTILITY */
@@ -39,7 +41,6 @@ body{
 header{
     background-color: var(--orange);
     color: var(--white);
-    box-shadow: 0 3px 8px var(--shadow);
 }
 
 footer{
@@ -76,26 +77,37 @@ header nav ul{
     padding-left: 5px;
 }
 
-/* MAIN */
+.fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: var(--orange);
+    z-index: 1000;
+    box-shadow: 0 3px 8px var(--shadow);
+}
 
+/* MAIN */
 
 .row{
     display: flex;
-    margin-top: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .col{
-    width: calc((100% - 100px) / 3);
+    /* width: calc((100% - 100px) / 3); */
     position: relative;
     cursor: pointer;
 }
 
 .col img{
     width: 100%;
+    max-height: 900px;
 }
 
 .margin{
-    margin: 0 5px;
+    margin: 20px 8px;
 }
 
 .label{
@@ -107,10 +119,79 @@ header nav ul{
     display: block;
     color: var(--white);
     font-weight: bold;
-}
-
-.sale{
     background-color: var(--red);
 }
 
+.sustainability{
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    margin: 0 5px;
+    padding: 4px 8px;
+    display: block;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--green)
+}
 
+.heart{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 40px;
+    padding: 8px 15px;
+    background-color: var(--white);
+}
+
+.col:hover .heart{
+    color: var(--red);
+}
+
+.brand, .price{
+    font-size: 16px;
+}
+.price{
+    color: var(--red);
+    font-weight: bold;
+}
+
+.original-price{
+    color: var(--blach);
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.second-img{
+    display: none;
+}
+
+.col:hover .second-img{
+    display: inline-block;
+}
+
+.col:hover .first-img{
+    display: none;
+}
+
+/* FOOTER */
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+
+.policy li{
+    padding: 0 10px 0 0;
+   font-weight: 100;
+}
+.social-links i{
+    padding: 10px 5px 0 5px;
+    color: var(--white);
+    transform: scale(1.5);
+}
+
+.srl{
+    font-size: 22px;
+}
