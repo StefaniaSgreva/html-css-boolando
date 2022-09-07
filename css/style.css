@@ -5,6 +5,7 @@
     --blach: #1a1a1a;
     --white: #ffffff;
     --shadow: #acacac;
+    --red: red;
 }
 
 /* UTILITY */
@@ -26,7 +27,6 @@ body{
     max-width: 1170px;
     margin: 0 auto;
     width: 80%;
-    /* background-color: aqua; */
 }
 
 .flexbox{
@@ -76,34 +76,41 @@ header nav ul{
     padding-left: 5px;
 }
 
-/* .fixed{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    background-color: var(--orange);
-    z-index: 1000;
-} */
+/* MAIN */
 
-/* FOOTER */
 
-.footer-row{
+.row{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0 30px 0;
+    margin-top: 40px;
 }
 
-.policy li{
-    padding: 0 10px 0 0;
-   font-weight: 100;
+.col{
+    width: calc((100% - 100px) / 3);
+    position: relative;
+    cursor: pointer;
 }
-.social-links i{
-    padding: 10px 5px 0 5px;
+
+.col img{
+    width: 100%;
+}
+
+.margin{
+    margin: 0 5px;
+}
+
+.label{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 50px;
+    padding: 4px;
+    display: block;
     color: var(--white);
-    transform: scale(1.5);
+    font-weight: bold;
 }
 
-.srl{
-    font-size: 22px;
+.sale{
+    background-color: var(--red);
 }
+
+
